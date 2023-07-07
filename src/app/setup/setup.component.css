@@ -1,0 +1,68 @@
+.spinner {
+  display: flex;
+}
+
+.setup-font {
+  font-size: 1.8em;
+  line-height: 1.5em;
+}
+
+.punchline-font {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.5em;
+}
+
+.punchline-btn {
+  margin-top: 0.5rem;
+  background-color: #ff5613;
+  border-radius: 8px;
+  height: 2rem;
+  width: 7.5rem;
+}
+
+.punchline-btn:hover {
+  margin-top: 0.5rem;
+  background-color: #ff7a45;
+  border-radius: 8px;
+  height: 2rem;
+  width: 7.5rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.punchline-btn:active {
+  margin-top: 0.5rem;
+  background-color: #ff5613;
+  border-radius: 8px;
+  height: 2rem;
+  width: 7.5rem;
+  cursor: pointer;
+}
+
+.reload-btn {
+  margin-top: 0.5rem;
+  background-color: #23d100;
+  border-radius: 8px;
+  height: 2rem;
+  width: 5.5rem;
+}
+
+.reload-btn:hover {
+  margin-top: 0.5rem;
+  background-color: #3ffd19;
+  border-radius: 8px;
+  height: 2rem;
+  width: 5.5rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.reload-btn:active {
+  margin-top: 0.5rem;
+  background-color: #23d100;
+  border-radius: 8px;
+  height: 2rem;
+  width: 5.5rem;
+  cursor: pointer;
+}
