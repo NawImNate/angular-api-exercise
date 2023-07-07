@@ -18,6 +18,10 @@ export class SetupComponent {
     this.displayPunchline = !this.displayPunchline;
   }
 
+  reloadCurrentPage() {
+    window.location.reload();
+  }
+
   joke: JokeInterface;
 
   ngOnInit() {
