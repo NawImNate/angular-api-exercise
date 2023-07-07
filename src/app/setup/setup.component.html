@@ -1,0 +1,18 @@
+<mat-progress-spinner
+  mode="indeterminate"
+  *ngIf="isLoading === true"
+></mat-progress-spinner>
+<div class="is-wait" *ngIf="!isLoading">
+  <p>{{ joke.setup }}</p>
+  <button class="punch-btn" (click)="onPress()">
+    {{ displayPunchline ? "Hide Punchline" : "Show Punchline" }}
+  </button>
+  <div id="comp-render" *ngIf="displayPunchline">
+    <p>{{ joke.punchline }}</p>
+  </div>
+</div>
+<!-- use ngIf? -->
+
+<!-- <div class="spinner-grow text-primary" style="width:3rem height: 3rem" role="status" *ngIf= "loader">
+  <span class="visually-hidden">Loading...</span>
+</div> -->
