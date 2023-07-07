@@ -1,14 +1,18 @@
 <mat-progress-spinner
+  class="spinner"
   mode="indeterminate"
   *ngIf="isLoading === true"
 ></mat-progress-spinner>
 <div class="is-wait" *ngIf="!isLoading">
-  <p>{{ joke.setup }}</p>
-  <button class="punch-btn" (click)="onPress()">
+  <p class="setup-font">{{ joke.setup }}</p>
+  <div id="comp-render" *ngIf="displayPunchline">
+    <p class="punchline-font">{{ joke.punchline }} 😂😂😂</p>
+  </div>
+  <button class="punchline-btn" (click)="onPress()">
     {{ displayPunchline ? "Hide Punchline" : "Show Punchline" }}
   </button>
-  <div id="comp-render" *ngIf="displayPunchline">
-    <p>{{ joke.punchline }}</p>
+  <div>
+    <button class="reload-btn" (click)="reloadCurrentPage()">New Joke</button>
   </div>
 </div>
 <!-- use ngIf? -->
